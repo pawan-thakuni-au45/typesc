@@ -23,9 +23,14 @@ interface User{
     password:string,
     email:string
 }
-
+//WE CAN CHOOSE SET OF PROPERTIES BY USING "PICK"
 type updateUser=Pick<User ,'name'|'password'|'email'>
+
+//we can choose properties optionally by using "PARTIAL API"
+type updateUserOptional=Partial<updateUser>
 
 function updateuserDetail(updateUser:updateUser){
 
+
 }
+updateuserDetail({name:'2322',password:"feefefe",email:'ffef'})
