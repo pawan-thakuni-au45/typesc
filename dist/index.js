@@ -1,10 +1,7 @@
 "use strict";
-function sumAge(user1, user2) {
-    return user1.age + user2.age;
+// interface Users {
+//     name:string,
+//     age:number
+// }
+function updateuserDetail(updateUser) {
 }
-let userDetails = sumAge({
-    name: 'pawan', age: 23
-}, {
-    name: 'rahul', age: 27
-});
-console.log(userDetails);
